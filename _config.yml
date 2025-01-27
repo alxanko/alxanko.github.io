@@ -11,6 +11,11 @@ baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 # Publish posts or collection documents with a future date.
 future: true
 
+collections:
+  posts:
+    output: true
+    permalink: /:year/:month/:title/
+
 # SNS settings
 RSS: false
 weibo_username: huxpro
@@ -31,8 +36,7 @@ exclude:
     "node_modules",
     "Gruntfile.js",
     "package.json",
-    "README.md",
-    "README.zh.md",
+    "README.md"
   ]
 anchorjs: true # if you want to customize anchor. check out line:181 of `post.html`
 # If you have timezone issue (e.g. #68) in China, uncomment to use this:
